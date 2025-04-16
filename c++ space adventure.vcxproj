@@ -132,7 +132,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="spec.md" />
+    <None Include="SPECIFICATION.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

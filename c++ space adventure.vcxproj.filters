@@ -15,9 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="spec.md">
-      <Filter>Resource Files</Filter>
-    </None>
+    <None Include="SPECIFICATION.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
