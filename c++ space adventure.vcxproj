@@ -132,7 +132,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="spec.md" />
+    <None Include="SPECIFICATION.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -145,7 +145,6 @@
     <ClInclude Include="events.hpp" />
     <ClInclude Include="factions.hpp" />
     <ClInclude Include="galaxy.hpp" />
-    <ClInclude Include="renderer.hpp" />
     <ClInclude Include="ship.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

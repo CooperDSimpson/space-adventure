@@ -15,9 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="spec.md">
-      <Filter>Resource Files</Filter>
-    </None>
+    <None Include="SPECIFICATION.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -41,9 +39,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="combat.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="renderer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="events.hpp">
