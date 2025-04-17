@@ -135,6 +135,7 @@
     <None Include="SPECIFICATION.md" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="camera.hpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +146,7 @@
     <ClInclude Include="events.hpp" />
     <ClInclude Include="factions.hpp" />
     <ClInclude Include="galaxy.hpp" />
+    <ClInclude Include="renderer.hpp" />
     <ClInclude Include="ship.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
