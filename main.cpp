@@ -19,10 +19,15 @@ ProjectileManager projectile_manager;
 int main() {
     double current_distance = 10;
     world.build();
+
+    world.create_special_region(100, 100, 50, 0);  // Nebula at (100,100)
+    world.create_special_region(-200, 150, 30, 0);  // Another nebula
     CHAR_INFO* screen = new CHAR_INFO[camera.screen_width * camera.screen_height];
     HANDLE hConsole = CreateConsoleScreenBuffer(GENERIC_READ | GENERIC_WRITE, 0, NULL, CONSOLE_TEXTMODE_BUFFER, NULL);
     SetConsoleActiveScreenBuffer(hConsole);
     DWORD dwBytesWritten = 0;
+
+    //ship.teleport(-200, 150);
 
     Renderer renderer(camera, world, ship, projectile_manager, screen);
 

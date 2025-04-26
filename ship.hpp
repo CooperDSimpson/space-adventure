@@ -46,6 +46,11 @@ public:
 		camera_relative_y = new_camera_relative_y;
 	}
 
+	void teleport(double x, double y) {
+		ship_center_x = x;
+		ship_center_y = y;
+	}
+
 	std::vector<Ship_Part> transpile_ship_map(
 		const std::vector<std::vector<wchar_t>>& map,
 		int anchor_x,
