@@ -21,9 +21,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="camera.hpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="galaxy.hpp">
@@ -32,25 +29,19 @@
     <ClInclude Include="ship.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="crew.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="economy.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="factions.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="combat.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="events.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="color.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="renderer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="projectile.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cursor.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

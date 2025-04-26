@@ -27,6 +27,9 @@ private:
 
 public:
 
+	double velocity_x = 0;
+	double velocity_y = 0;
+
 	double ship_center_x = 5;
 	double ship_center_y = 5;
 
@@ -77,6 +80,14 @@ public:
 		}
 
 		return result;
+	}
+
+	void update_ship_shit(double delta_time) {
+		ship_center_x += velocity_x * delta_time;
+		ship_center_y += velocity_y * delta_time;
+
+		velocity_x = velocity_x * 0.9999;
+		velocity_y = velocity_y * 0.9999;
 	}
 
 

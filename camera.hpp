@@ -11,8 +11,10 @@ public:
 	double relative_x_pos = 0;
 	double relative_y_pos = 0;
 
-	int screen_width = 50;
-	int screen_height = 50;
+	int scale = 4;
+
+	int screen_width = 59 * scale;
+	int screen_height = 20 * scale;
 
 	CAMERA_MODE mode = LOCKED;
 };

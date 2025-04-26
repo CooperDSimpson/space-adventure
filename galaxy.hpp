@@ -17,6 +17,7 @@ private:
 		Tile{L'.', FG_GREEN},
 		Tile{L'.', FG_BLUE},
 		Tile{L'.', FG_YELLOW},
+		Tile{L'.', FG_WHITE}
 	};
 public:
 	std::vector<std::vector<Tile>> tile_map;

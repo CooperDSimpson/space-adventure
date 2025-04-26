@@ -128,24 +128,22 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y "$(ProjectDir)saves" "$(TargetDir)"</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="SPECIFICATION.md" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="camera.hpp" />
+    <ClInclude Include="camera.hpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="color.hpp" />
-    <ClInclude Include="combat.hpp" />
-    <ClInclude Include="crew.hpp" />
-    <ClInclude Include="economy.hpp" />
-    <ClInclude Include="events.hpp" />
-    <ClInclude Include="factions.hpp" />
+    <ClInclude Include="cursor.hpp" />
     <ClInclude Include="galaxy.hpp" />
+    <ClInclude Include="projectile.hpp" />
     <ClInclude Include="renderer.hpp" />
     <ClInclude Include="ship.hpp" />
   </ItemGroup>
