@@ -238,4 +238,8 @@ public:
             }
         }
     }
+
+    void place_space_station(UINT64 x, UINT64 y) {
+
+    }
 };

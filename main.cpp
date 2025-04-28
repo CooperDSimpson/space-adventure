@@ -22,6 +22,7 @@ int main() {
 
     world.create_special_region(100, 100, 50, 0);  // Nebula at (100,100)
     world.create_special_region(-200, 150, 30, 0);  // Another nebula
+
     CHAR_INFO* screen = new CHAR_INFO[camera.screen_width * camera.screen_height];
     HANDLE hConsole = CreateConsoleScreenBuffer(GENERIC_READ | GENERIC_WRITE, 0, NULL, CONSOLE_TEXTMODE_BUFFER, NULL);
     SetConsoleActiveScreenBuffer(hConsole);
@@ -35,7 +36,15 @@ int main() {
     { L' ', L' ', L' ', L'#', L' ', L' ', L' ' },
     { L' ', L' ', L'#', L'#', L'#', L' ', L' ' },
     { L' ', L'#', L'#', L'#', L'#', L'#', L' ' },
-    { L'#', L'#', L'.', L'#', L'.', L'#', L'#' }
+    { L'#', L'#', L'.', L'#', L'.', L'#', L'#' },
+    };
+
+    std::vector<std::vector<wchar_t>> station_template = {
+        {L'#',L'#',L'#',L'#',L'#'},
+        {L'#',L'#',L'#',L'#',L'#'},
+        {L'#',L'#',L'#',L'#',L'#'},
+        {L'#',L'#',L'#',L'#',L'#'},
+        {L'#',L'#',L'#',L'#',L'#'},
     };
 
     camera.mode = CHASE;
@@ -121,6 +130,7 @@ int main() {
 
         // Update projectiles
         projectile_manager.update(delta_time.count());
+
 
         // Render everything
         renderer.render_screen();
